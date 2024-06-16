@@ -121,5 +121,5 @@ To provide user-friendly network simulation,This folder supports common routing 
 
 ## Credit
 This repository contains code from the repository of NS-3:
-* [ns-3-dev-git](https://github.com/nsnam/ns-3-dev-git/tree/master)
+* [NS-3](https://github.com/nsnam/ns-3-dev-git/tree/master)
 
