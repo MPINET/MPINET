@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2024/1/3.
-//
-
 #ifndef NS3_ROUTE_MONITOR_H
 #define NS3_ROUTE_MONITOR_H
 

@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/10/4.
-//
-
 #include "main.h"
 #include "routing/ipv4-ugal-routing-helper.h"
 #include "topology/fattree-topology.h"

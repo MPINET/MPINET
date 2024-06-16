@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/10/11.
-//
-
 #ifndef NS3_RN_SIMULATOR_MAIN_H
 #define NS3_RN_SIMULATOR_MAIN_H
 

@@ -26,7 +26,7 @@ else ()
     message(SEND_ERROR "mpi-application: gurobi not found")
 endif ()
 
-add_library(rn-simulator-routing
+add_library(simulator-routing
         SHARED
         routing/ipv4-routing-utility.cpp
         routing/congestion-monitor-application.cpp
@@ -34,54 +34,36 @@ add_library(rn-simulator-routing
         topology/flexfly-topology.cpp
 )
 
-add_library(rn-simulator-mip
+add_library(simulator-mip
         SHARED
         mip-model/network.cpp
 )
 
 add_executable(
-        rn-simulator
-        main.cpp
+        simulator
+        dragonfly-test.cpp
 )
 
-add_executable(
-        rn-simulator-test
-        dragonfly-test-with-SDN.cpp
-)
 
 target_compile_options(
-        rn-simulator
+        simulator
         PRIVATE
         $<$<CONFIG:Debug>:-fsanitize=address>
         $<$<CONFIG:Debug>:-fno-omit-frame-pointer>
 )
 
-target_include_directories(rn-simulator PRIVATE ${Python_INCLUDE_DIRS})
+target_include_directories(simulator PRIVATE ${Python_INCLUDE_DIRS})
 
 target_link_options(
-        rn-simulator
+        simulator
         PRIVATE
         $<$<CONFIG:Debug>:-fsanitize=address>
 )
 
 target_link_libraries(
-        rn-simulator
-        rn-simulator-mip
-        rn-simulator-routing
-        ${GUROBI_LIBRARY}
-        ${GUROBI_CXX_LIBRARY}
-        ${libapplications}
-        ${libcore}
-        ${libnetwork}
-        ${libinternet}
-        ${libpoint-to-point}
-        ${libmpi-application}
-)
-
-target_link_libraries(
-        rn-simulator-test
-        rn-simulator-mip
-        rn-simulator-routing
+        simulator
+        simulator-mip
+        simulator-routing
         ${GUROBI_LIBRARY}
         ${GUROBI_CXX_LIBRARY}
         ${libapplications}

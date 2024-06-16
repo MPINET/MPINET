@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/9/17.
-//
-
 #include <cmath>
 
 #include <ns3/core-module.h>

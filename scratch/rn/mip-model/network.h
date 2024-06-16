@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/9/5.
-//
-
 #ifndef NS3_NETWORK_H
 #define NS3_NETWORK_H
 

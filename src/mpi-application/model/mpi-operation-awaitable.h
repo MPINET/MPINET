@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/6/6.
-//
-
 #ifndef NS3_MPI_APPLICATION_OPERATION_AWAITABLE_H
 #define NS3_MPI_APPLICATION_OPERATION_AWAITABLE_H
 

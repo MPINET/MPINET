@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/9/21.
-//
-
 #include "ipv4-routing-utility.h"
 
 ns3::Ptr<ns3::NetDevice> ns3::RemoteDevice(Ptr<NetDevice> localDevice) {

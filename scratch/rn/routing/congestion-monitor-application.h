@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/9/17.
-//
-
 #ifndef NS3_CONGESTION_MONITOR_APPLICATION_H
 #define NS3_CONGESTION_MONITOR_APPLICATION_H
 

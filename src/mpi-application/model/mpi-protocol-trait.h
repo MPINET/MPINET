@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/6/18.
-//
-
 #ifndef NS3_MPI_APPLICATION_PROTOCOL_TRAIT_H
 #define NS3_MPI_APPLICATION_PROTOCOL_TRAIT_H
 

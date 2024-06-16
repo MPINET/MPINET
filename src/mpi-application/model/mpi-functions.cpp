@@ -1,7 +1,3 @@
-//
-// Created by 李子健 on 2023/7/1.
-//
-
 #include "mpi-functions.h"
 
 #include <string>

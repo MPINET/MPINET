@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/6/26.
-//
-
 #include <unordered_map>
 #include <vector>
 

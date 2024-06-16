@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/10/4.
-//
-
 #include <algorithm>
 #include <map>
 #include <string>

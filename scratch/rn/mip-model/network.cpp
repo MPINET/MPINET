@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/9/5.
-//
-
 #include "network.h"
 
 #include <algorithm>

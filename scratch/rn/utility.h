@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/10/4.
-//
-
 #ifndef NS3_UTILITY_H
 #define NS3_UTILITY_H
 

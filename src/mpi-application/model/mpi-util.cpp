@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/7/14.
-//
-
 #include "mpi-util.h"
 
 ns3::Address ns3::retrieveIPAddress(const Address &address) {

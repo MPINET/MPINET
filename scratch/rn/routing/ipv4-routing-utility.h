@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2023/9/18.
-//
-
 #ifndef NS3_IPV4_ROUTING_UTILITY_H
 #define NS3_IPV4_ROUTING_UTILITY_H
 

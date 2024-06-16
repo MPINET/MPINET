@@ -1,7 +1,3 @@
-//
-// Created by Ricardo Evans on 2024/1/11.
-//
-
 #ifndef NS3_HIERARCHIC_CONGESTION_H
 #define NS3_HIERARCHIC_CONGESTION_H
 

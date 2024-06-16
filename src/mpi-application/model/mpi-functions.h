@@ -1,7 +1,3 @@
-//
-// Created by 李子健 on 2023/7/2.
-//
-
 #ifndef NS3_MPI_FUNCTIONS_H
 #define NS3_MPI_FUNCTIONS_H
 
