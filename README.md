@@ -11,7 +11,7 @@ cmake -DCMAKE_BUILD_TYPE=Debug -DNS3_MPI=ON -G 'CodeBlocks - Unix Makefiles' -S 
 
 2. Configure NS-3.
 ``` shell
-./ns3 configure --enable-mpi
+./ns3 configure
 ```
 
 ### Preparing Trace Files
