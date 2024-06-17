@@ -35,9 +35,9 @@ scratch\rn\traces\HPCG\dumpi-2023.03.31.06.35.04-0014.bin
 scratch\rn\traces\HPCG\dumpi-2023.03.31.06.35.04-0015.bin
 ```
 
-1. The AMR, IMB, LULESH, miniFE trace files are already in `scrach/rn/traces`.
+2. The AMR, IMB, LULESH, miniFE trace files are already in `scrach/rn/traces` as well.
 
-2. If you want to replay DUMPI traces of other HPC applications, please follow the above file format.
+3. If you want to replay DUMPI traces of other HPC applications, please follow the above file format.
 
 ### Compiling Simulator
 1. The default initialization of the simulator is `scrach/rn/dragonfly-test.cpp`. You can make your own initialization of MPINET.
@@ -56,7 +56,7 @@ cd build
 ```
 
 2. MPINET supports a range of typical and cutting-edge network functions. You can enable these network functions through different parameters.
-Here's a reformatted version of the parameters and descriptions:
+Here's the parameters and descriptions:
 
 | Parameter                  | Description                                                                                                    |
 |----------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -104,20 +104,23 @@ To replay real HPC application traces, this folder contains implementations of M
     - Stop applications upon completion.
 
 ### `scratch/rn/topology`
-To provide user-friendly network simulation, Within this directory, various common topologies found in HPC (High-Performance Computing) systems are supported. These include:
+To provide user-friendly network simulation, within this folder, various common topologies found in HPC (High-Performance Computing) systems are supported. These include:
 
 - **Supported Topologies**:
   - **Dragonfly**: Implementation of the Dragonfly topology, known for its scalability and fault tolerance in large-scale systems.
   - **Fat-tree**: Implementation of the Fat-tree topology, widely used for its balanced structure and efficient routing in data centers.
-  - **Flexfly**: Implementation of the Fat-tree topology, widely used for its balanced structure and efficient routing in data centers.
+  - **Flexfly**: Implementation of the Flexfly topology, which offers flexibility and adaptability to varying application and system demands.
 - **Additional Features**:
   - **Optical Circuit Switching (OCS)**: Integration of OCS into network simulations, exploring advanced switching technologies for enhanced performance.
-  - **Reconfiguration Algorithm**: Implementation of a state-of-the-art algorithm for dynamically reconfiguring network topologies, optimizing resource utilization and performance in dynamic environments.
+  - **Reconfiguration Algorithm**: Implementation of a state-of-the-art algorithm for incrementally reconfiguring network topologies, optimizing resource utilization and performance in dynamic environments.
 ### `scratch/rn/routing`
-To provide user-friendly network simulation,This folder supports common routing schemes used in HPC systems, including:
+To provide user-friendly network simulation, this folder supports common routing schemes used in HPC systems, including:
 
 - **UGAL(Uniform Global Adaptive Routing)**: Implementation of adaptive routing algorithms that balance traffic load across network paths, improving overall network efficiency.
 - **MIN-UGAL**: Implementation of a routing scheme designed for optimizing network communication in High-Performance Computing (HPC) systems. It combines adaptive routing for inter-group communication with shortest-path routing for intra-group communication.
+
+## Tips
+- **Recommended compiler**: The latest version of the GCC compiler(GCC-13 used in MPINET). Previous versions may have some bugs that could cause errors.
 
 ## Credit
 This repository contains code from the repository of NS-3:
